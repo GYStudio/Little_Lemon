@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #495e57;
+    --font-family: 'Karla', sans-serif;
+  }
+  
+  .topbar {
+    /* justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    max-width: 65rem;
+    margin: 0 auto; */
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    max-width: 65rem;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  .menu-list {
+    margin-left: 0;
+    color: inherit;
+    flex-direction: row;
+  }
+  
+  ul li a {
+    margin-left: 1rem;
+    color: black;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 1.1em;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .topbar {
+      width: 100%;
+      position: fixed;
+      margin-bottom: 96px;
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .menu-list {
+      position: fixed;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 1rem;
+      display: none;
+    }
+  
+    .nav.open .menu-list {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    ul li {
+      display: block; /* Ensure each list item is a block element */
+      margin-left: 0; /* Reset margin for vertical alignment */
+    }
+  
+    ul li a {
+      color: var(--primary-color);
+    }
+  }
+  
